@@ -9,7 +9,6 @@ import dash_extensions
 from dash_extensions.snippets import send_data_frame
 from dash.exceptions import PreventUpdate
 import dash_table
-import math
 from scipy.integrate import odeint
 import numpy as np
 import pandas as pd
@@ -31,7 +30,7 @@ def BatchRXR1stOrderFun(DiffVariables, Time, ReactorConditions, RXNOrders, Param
     k0 = Parameters[0]  # mol/L s
     Ea = Parameters[1]  # J/mol
     T = ReactorConditions[0] + 273.15  # K
-    RateConstant = k0 * math.exp(-Ea / (8.3145 * T))  # mol/L s
+    RateConstant = k0 * np.exp(-Ea / (8.3145 * T))  # mol/L s
     #print(RateConstant)
     rate = RateConstant * (CA ** RXNOrders[0]) * (CB ** RXNOrders[1])
 
