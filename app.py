@@ -425,4 +425,4 @@ def func(nclickslocal, Ca0, Cb0, Cc0, Cd0, TRXR, SimTime, OrderA, OrderB, PreExp
         return send_data_frame(MyDataSetLocal.to_excel, "WebApp_Batch_Simulation.xls")
 
 if __name__ == '__main__':
-    app.run_server(debug=True)  # Set debug to true makes webapp automatically update, when user clicks refresh
+    app.run_server()  # Set debug to true makes webapp automatically update, when user clicks refresh
