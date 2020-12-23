@@ -15,6 +15,7 @@ import pandas as pd
 import plotly.graph_objects as go
 
 app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = app.server      #exposes server of dash app as an objective that gunicorn can pick
 app.title = 'Conor\'s WebApp'  # set the title to appear in the tab
 
 NumberofSolutionSteps = 100
