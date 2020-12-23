@@ -26,3 +26,14 @@ we removed import math from app
 
 added gunicorn to requirments.txt
 added "server = app.server" to app.py to allow gunicorn to work
+
+
+Python packages that Marco did not have
+certifi==2020.12.5
+mkl-fft==1.2.0
+mkl-random==1.1.1
+mkl-service==2.3.0
+pip==20.3.3
+wheel==0.36.2
+wincertstore==0.2
+
