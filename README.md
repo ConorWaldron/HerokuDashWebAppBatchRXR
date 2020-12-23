@@ -34,6 +34,7 @@ mkl-fft==1.2.0
 mkl-random==1.1.1
 mkl-service==2.3.0
 pip==20.3.3
+setuptools
 wheel==0.36.2
 wincertstore==0.2
 
