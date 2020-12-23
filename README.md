@@ -14,15 +14,15 @@ For deploying Dash webapps with Heroku
 I made requirments.txt file using command pip list --format=freeze > requirements.txt
 instead of normal command pip freeze> requirements.txt as otherwise it produced weird path locations in requirments folder
 
-Had to manually adjust requirements.txt file 
+Had to manually adjust requirements.txt file to remove mlk things
 mkl-fft==1.2.0
 mkl-random==1.1.1
 mkl-service==2.3.0
+
+We updated version of set up tools
 setuptools==51.0.0.post20201207
 
-were changed to 
-mkl-fft==1.0.6
-mkl-random==1.0.1.1
-setuptools==51.1.0
+we removed import math from app
 
-Note I could not find a version of mkl-service
+added gunicorn to requirments.txt
+added "server = app.server" to app.py to allow gunicorn to work
